@@ -1,0 +1,9 @@
+model,review_capacity,fraud_found,precision_at_k
+Logistic regression,50,49,0.98
+Logistic regression,100,59,0.59
+Logistic regression,200,63,0.315
+Logistic regression,500,65,0.13
+Hist gradient boosting,50,47,0.94
+Hist gradient boosting,100,57,0.57
+Hist gradient boosting,200,59,0.295
+Hist gradient boosting,500,63,0.126

@@ -1,0 +1,85 @@
+{
+  "n_total_transactions": 284807,
+  "n_total_fraud": 492,
+  "fraud_rate_overall": 0.001727485630620034,
+  "split_method": "time-based (chronological), 70/30",
+  "n_train": 199364,
+  "n_train_fraud": 384,
+  "n_test": 85443,
+  "n_test_fraud": 108,
+  "resampling_method": "manual random oversampling of minority class, training set only, to 10% fraud rate",
+  "baseline_roc_auc": 0.9785404581941759,
+  "baseline_pr_auc": 0.7372410673292251,
+  "primary_roc_auc": 0.9838490567675545,
+  "primary_pr_auc": 0.806361519597628,
+  "isoforest_roc_auc": 0.9357600437491456,
+  "isoforest_pr_auc": 0.03672984436206613,
+  "target_recall": 0.8,
+  "baseline_fpr_at_target_recall": 0.0009257631686881116,
+  "baseline_actual_recall": 0.8055555555555556,
+  "primary_fpr_at_target_recall": 0.0008906076053202086,
+  "primary_actual_recall": 0.8055555555555556,
+  "relative_fpr_reduction_pct": 3.7974683544303756,
+  "pct_point_fpr_reduction": 0.003515556336790293,
+  "n_legit_test": 85335,
+  "baseline_fp_count": 79,
+  "primary_fp_count": 76,
+  "recall_scan": [
+    {
+      "target_recall": 0.7,
+      "baseline_actual_recall": 0.7037037037037037,
+      "baseline_fpr_pct": 0.026952598582058944,
+      "primary_actual_recall": 0.75,
+      "primary_fpr_pct": 0.002343704224526865,
+      "relative_fpr_reduction_pct": 91.30434782608695,
+      "pct_point_reduction": 0.02460889435753208
+    },
+    {
+      "target_recall": 0.75,
+      "baseline_actual_recall": 0.75,
+      "baseline_fpr_pct": 0.03398371125563954,
+      "primary_actual_recall": 0.75,
+      "primary_fpr_pct": 0.002343704224526865,
+      "relative_fpr_reduction_pct": 93.10344827586206,
+      "pct_point_reduction": 0.03164000703111267
+    },
+    {
+      "target_recall": 0.8,
+      "baseline_actual_recall": 0.8055555555555556,
+      "baseline_fpr_pct": 0.09257631686881115,
+      "primary_actual_recall": 0.8055555555555556,
+      "primary_fpr_pct": 0.08906076053202086,
+      "relative_fpr_reduction_pct": 3.7974683544303756,
+      "pct_point_reduction": 0.003515556336790293
+    },
+    {
+      "target_recall": 0.85,
+      "baseline_actual_recall": 0.8518518518518519,
+      "baseline_fpr_pct": 0.3503837815667663,
+      "primary_actual_recall": 0.8518518518518519,
+      "primary_fpr_pct": 0.902326126442843,
+      "relative_fpr_reduction_pct": -157.52508361204013,
+      "pct_point_reduction": -0.5519423448760767
+    },
+    {
+      "target_recall": 0.9,
+      "baseline_actual_recall": 0.9074074074074074,
+      "baseline_fpr_pct": 5.050682603855393,
+      "primary_actual_recall": 0.9074074074074074,
+      "primary_fpr_pct": 4.0405460830843145,
+      "relative_fpr_reduction_pct": 20.0,
+      "pct_point_reduction": 1.0101365207710786
+    },
+    {
+      "target_recall": 0.95,
+      "baseline_actual_recall": 0.9537037037037037,
+      "baseline_fpr_pct": 19.03673756371946,
+      "primary_actual_recall": 0.9537037037037037,
+      "primary_fpr_pct": 11.450166988925996,
+      "relative_fpr_reduction_pct": 39.852262234533704,
+      "pct_point_reduction": 7.586570574793461
+    }
+  ],
+  "headline_operating_point": "recall=0.90: 20.0% relative FPR reduction (5.05% to 4.04%), 1.01 percentage points",
+  "transparency_note": "At recall=0.85, the primary model has a higher FPR than baseline (0.90% vs 0.35%); this is reported honestly rather than omitted. Improvement is not uniform across all recall levels, and PR-AUC is the more appropriate summary metric for this level of class imbalance."
+}
